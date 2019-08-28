@@ -1,0 +1,17 @@
+C:\Users\吕鑫驰\Desktop\CMRC\BLL\bin\Debug\BLL.pdb
+C:\Users\吕鑫驰\Desktop\CMRC\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\吕鑫驰\Desktop\CMRC\BLL\obj\Debug\BLL.dll
+C:\Users\吕鑫驰\Desktop\CMRC\BLL\obj\Debug\BLL.pdb
+C:\Users\吕鑫驰\Desktop\CMRC\BLL\bin\Debug\IDAL.dll
+C:\Users\吕鑫驰\Desktop\CMRC\BLL\bin\Debug\Model.dll
+C:\Users\吕鑫驰\Desktop\CMRC\BLL\bin\Debug\EntityFramework.dll
+C:\Users\吕鑫驰\Desktop\CMRC\BLL\bin\Debug\IDAL.pdb
+C:\Users\吕鑫驰\Desktop\CMRC\BLL\bin\Debug\Model.pdb
+C:\Users\吕鑫驰\Desktop\CMRC\BLL\bin\Debug\EntityFramework.xml
+C:\Users\吕鑫驰\Desktop\CMRC\BLL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\吕鑫驰\Desktop\CMRC\BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\吕鑫驰\Desktop\CMRC\BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\吕鑫驰\Desktop\CMRC\BLL\bin\Debug\Factory.dll
+C:\Users\吕鑫驰\Desktop\CMRC\BLL\bin\Debug\Factory.pdb
+C:\Users\吕鑫驰\Desktop\CMRC\BLL\bin\Debug\DAL.dll
+C:\Users\吕鑫驰\Desktop\CMRC\BLL\bin\Debug\DAL.pdb

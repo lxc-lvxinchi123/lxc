@@ -1,0 +1,15 @@
+c:\users\吕鑫驰\documents\visual studio 2015\Projects\CMRC\IDAL\bin\Debug\IDAL.dll
+c:\users\吕鑫驰\documents\visual studio 2015\Projects\CMRC\IDAL\bin\Debug\IDAL.pdb
+c:\users\吕鑫驰\documents\visual studio 2015\Projects\CMRC\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
+c:\users\吕鑫驰\documents\visual studio 2015\Projects\CMRC\IDAL\obj\Debug\IDAL.dll
+c:\users\吕鑫驰\documents\visual studio 2015\Projects\CMRC\IDAL\obj\Debug\IDAL.pdb
+C:\Users\吕鑫驰\Desktop\CMRC\IDAL\bin\Debug\IDAL.dll
+C:\Users\吕鑫驰\Desktop\CMRC\IDAL\bin\Debug\IDAL.pdb
+C:\Users\吕鑫驰\Desktop\CMRC\IDAL\bin\Debug\Model.dll
+C:\Users\吕鑫驰\Desktop\CMRC\IDAL\bin\Debug\EntityFramework.dll
+C:\Users\吕鑫驰\Desktop\CMRC\IDAL\bin\Debug\Model.pdb
+C:\Users\吕鑫驰\Desktop\CMRC\IDAL\bin\Debug\EntityFramework.xml
+C:\Users\吕鑫驰\Desktop\CMRC\IDAL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\吕鑫驰\Desktop\CMRC\IDAL\obj\Debug\IDAL.dll
+C:\Users\吕鑫驰\Desktop\CMRC\IDAL\obj\Debug\IDAL.pdb
+C:\Users\吕鑫驰\Desktop\CMRC\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache

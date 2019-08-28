@@ -1,0 +1,16 @@
+C:\Users\吕鑫驰\Desktop\CMRC\Factory\bin\Debug\Factory.dll
+C:\Users\吕鑫驰\Desktop\CMRC\Factory\bin\Debug\Factory.pdb
+C:\Users\吕鑫驰\Desktop\CMRC\Factory\obj\Debug\Factory.csprojResolveAssemblyReference.cache
+C:\Users\吕鑫驰\Desktop\CMRC\Factory\obj\Debug\Factory.dll
+C:\Users\吕鑫驰\Desktop\CMRC\Factory\obj\Debug\Factory.pdb
+C:\Users\吕鑫驰\Desktop\CMRC\Factory\bin\Debug\BLL.dll
+C:\Users\吕鑫驰\Desktop\CMRC\Factory\bin\Debug\IDAL.dll
+C:\Users\吕鑫驰\Desktop\CMRC\Factory\bin\Debug\Model.dll
+C:\Users\吕鑫驰\Desktop\CMRC\Factory\bin\Debug\EntityFramework.dll
+C:\Users\吕鑫驰\Desktop\CMRC\Factory\bin\Debug\BLL.pdb
+C:\Users\吕鑫驰\Desktop\CMRC\Factory\bin\Debug\IDAL.pdb
+C:\Users\吕鑫驰\Desktop\CMRC\Factory\bin\Debug\Model.pdb
+C:\Users\吕鑫驰\Desktop\CMRC\Factory\bin\Debug\EntityFramework.xml
+C:\Users\吕鑫驰\Desktop\CMRC\Factory\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\吕鑫驰\Desktop\CMRC\Factory\bin\Debug\DAL.dll
+C:\Users\吕鑫驰\Desktop\CMRC\Factory\bin\Debug\DAL.pdb

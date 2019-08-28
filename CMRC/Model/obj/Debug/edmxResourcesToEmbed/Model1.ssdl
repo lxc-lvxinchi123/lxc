@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CommerceModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CMRC_Categories">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CategoryName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CMRC_Customers">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmailAddress" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CMRC_OrderDetails">
+    <Key>
+      <PropertyRef Name="OID" />
+    </Key>
+    <Property Name="OrderID" Type="int" Nullable="false" />
+    <Property Name="ProductID" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="UnitCost" Type="money" Nullable="false" />
+    <Property Name="OID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CMRC_Orders">
+    <Key>
+      <PropertyRef Name="OrderID" />
+    </Key>
+    <Property Name="OrderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerID" Type="int" Nullable="false" />
+    <Property Name="OrderDate" Type="datetime" Nullable="false" />
+    <Property Name="ShipDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CMRC_Products">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CategoryID" Type="int" Nullable="false" />
+    <Property Name="ModelNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModelName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductImage" Type="nvarchar" MaxLength="50" />
+    <Property Name="UnitCost" Type="money" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="3800" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“Commerce.dbo.CMRC_Reviews”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="CMRC_Reviews">
+    <Key>
+      <PropertyRef Name="ReviewID" />
+      <PropertyRef Name="ProductID" />
+      <PropertyRef Name="Rating" />
+    </Key>
+    <Property Name="ReviewID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductID" Type="int" Nullable="false" />
+    <Property Name="CustomerName" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerEmail" Type="nvarchar" MaxLength="50" />
+    <Property Name="Rating" Type="int" Nullable="false" />
+    <Property Name="Comments" Type="nvarchar" MaxLength="3850" />
+  </EntityType>
+  <EntityType Name="CMRC_ShoppingCart">
+    <Key>
+      <PropertyRef Name="RecordID" />
+    </Key>
+    <Property Name="RecordID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CartID" Type="nvarchar" MaxLength="50" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="ProductID" Type="int" Nullable="false" />
+    <Property Name="DateCreated" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_OrderDetails_Orders">
+    <End Role="CMRC_Orders" Type="Self.CMRC_Orders" Multiplicity="1" />
+    <End Role="CMRC_OrderDetails" Type="Self.CMRC_OrderDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CMRC_Orders">
+        <PropertyRef Name="OrderID" />
+      </Principal>
+      <Dependent Role="CMRC_OrderDetails">
+        <PropertyRef Name="OrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Orders_Customers">
+    <End Role="CMRC_Customers" Type="Self.CMRC_Customers" Multiplicity="1" />
+    <End Role="CMRC_Orders" Type="Self.CMRC_Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CMRC_Customers">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="CMRC_Orders">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Products_Categories">
+    <End Role="CMRC_Categories" Type="Self.CMRC_Categories" Multiplicity="1" />
+    <End Role="CMRC_Products" Type="Self.CMRC_Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CMRC_Categories">
+        <PropertyRef Name="CategoryID" />
+      </Principal>
+      <Dependent Role="CMRC_Products">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reviews_Products">
+    <End Role="CMRC_Products" Type="Self.CMRC_Products" Multiplicity="1" />
+    <End Role="CMRC_Reviews" Type="Self.CMRC_Reviews" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CMRC_Products">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="CMRC_Reviews">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ShoppingCart_Products">
+    <End Role="CMRC_Products" Type="Self.CMRC_Products" Multiplicity="1" />
+    <End Role="CMRC_ShoppingCart" Type="Self.CMRC_ShoppingCart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CMRC_Products">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="CMRC_ShoppingCart">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CommerceModelStoreContainer">
+    <EntitySet Name="CMRC_Categories" EntityType="Self.CMRC_Categories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CMRC_Customers" EntityType="Self.CMRC_Customers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CMRC_OrderDetails" EntityType="Self.CMRC_OrderDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CMRC_Orders" EntityType="Self.CMRC_Orders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CMRC_Products" EntityType="Self.CMRC_Products" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CMRC_ShoppingCart" EntityType="Self.CMRC_ShoppingCart" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CMRC_Reviews" EntityType="Self.CMRC_Reviews" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [CMRC_Reviews].[ReviewID] AS [ReviewID], 
+    [CMRC_Reviews].[ProductID] AS [ProductID], 
+    [CMRC_Reviews].[CustomerName] AS [CustomerName], 
+    [CMRC_Reviews].[CustomerEmail] AS [CustomerEmail], 
+    [CMRC_Reviews].[Rating] AS [Rating], 
+    [CMRC_Reviews].[Comments] AS [Comments]
+    FROM [dbo].[CMRC_Reviews] AS [CMRC_Reviews]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_OrderDetails_Orders" Association="Self.FK_OrderDetails_Orders">
+      <End Role="CMRC_Orders" EntitySet="CMRC_Orders" />
+      <End Role="CMRC_OrderDetails" EntitySet="CMRC_OrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Orders_Customers" Association="Self.FK_Orders_Customers">
+      <End Role="CMRC_Customers" EntitySet="CMRC_Customers" />
+      <End Role="CMRC_Orders" EntitySet="CMRC_Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Products_Categories" Association="Self.FK_Products_Categories">
+      <End Role="CMRC_Categories" EntitySet="CMRC_Categories" />
+      <End Role="CMRC_Products" EntitySet="CMRC_Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reviews_Products" Association="Self.FK_Reviews_Products">
+      <End Role="CMRC_Products" EntitySet="CMRC_Products" />
+      <End Role="CMRC_Reviews" EntitySet="CMRC_Reviews" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ShoppingCart_Products" Association="Self.FK_ShoppingCart_Products">
+      <End Role="CMRC_Products" EntitySet="CMRC_Products" />
+      <End Role="CMRC_ShoppingCart" EntitySet="CMRC_ShoppingCart" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

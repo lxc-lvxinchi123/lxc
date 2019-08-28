@@ -1,0 +1,156 @@
+﻿@using Model;
+  
+@model CMRC_Products
+
+
+    <table width="620" height="100%" align="left" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+            <tr valign="top">
+                <td>
+                    <br>
+                    <img width="24" align="left" src="/images/1x1.gif">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tbody>
+                            <tr>
+                                <td class="ContentHead">
+                                    <img width="60" height="32" align="left" src="/images/1x1.gif"><span id="ModelName">@Model.ModelName</span>
+                                    <br>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" valign="top">
+                        <tbody>
+                            <tr valign="top">
+                                <td rowspan="2">
+                                    <img width="24" height="1" src="/images/1x1.gif">
+                                </td>
+                                <td width="309">
+                                    <img height="15" src="/images/1x1.gif">
+                                    <br>
+                                    <img id="ProductImage" style="height:185px;width:309px;" src="/images/image.gif" border="0">
+                                    <br>
+                                    <br>
+                                    <img width="72" height="20" src="/images/1x1.gif"><span class="UnitCost"><b>价格：</b>&nbsp;<span id="UnitCost">@Model.UnitCost</span></span>
+                                    <br>
+                                    <img width="72" height="20" src="/images/1x1.gif"><span class="ModelNumber"><b>型号：</b>&nbsp;<span id="ModelNumber">@Model.ModelNumber</span></span>
+                                    <br>
+                                    <img width="72" height="20" src="/images/1x1.gif"><span class="ModelNumber"><b>添加到购物车：</b>&nbsp;<span id="ModelNumber"></span></span>
+                                    <br>
+                                    <img width="72" height="30" src="/images/1x1.gif"><a id="addToCart" href="AddToCart.aspx?ProductID=401"><img alt="" src="@Model.ProductImage"></a>
+                                </td>
+                                <td>
+                                    <table width="300" border="0">
+                                        <tbody>
+                                            <tr>
+                                                <td valign="top">
+                                                    <span class="NormalDouble" id="desc">@Model.Description</span>
+                                                    <br>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
+                                    <img height="30"  src="~/images/1x1.gif" />
+
+                                    <table width="95%" border="0" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                            <tr>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="MostPopularHead">
+                                                    &nbsp;���������Ʒ�Ĺ˿�ͬʱ������
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td bgcolor="#d3d3d3">
+                                                    &nbsp;
+                                                    <a class="MostPopularItemText" href="ProductDetails.aspx?ProductID=404">Interpreter Earrings</a>
+                                                    <br>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td bgcolor="#d3d3d3">
+                                                    &nbsp;
+                                                    <a class="MostPopularItemText" href="ProductDetails.aspx?ProductID=378">Guard Dog Pacifier</a>
+                                                    <br>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td bgcolor="#d3d3d3">
+                                                    &nbsp;
+                                                    <a class="MostPopularItemText" href="ProductDetails.aspx?ProductID=372">Perfect-Vision Glasses</a>
+                                                    <br>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td bgcolor="#d3d3d3">
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+
+
+
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr></tr>
+                        </tbody>
+                    </table>
+                    <table border="0">
+                        <tbody>
+                            <tr>
+                                <td>
+
+                                    <img width="89" height="20"src="~/images/1x1.gif" />
+                                </td>
+                                <td width="100%">
+
+                                    <font face="宋体"></font><font face="宋体"></font>
+                                    <br>
+                                    <br>
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                            <tr>
+                                                <td class="SubContentHead">
+                                                    &nbsp;回顾
+                                                    <br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a id="ReviewList_AddReview" href="ReviewAdd.aspx?productID=401">
+                                                        
+                                                        <img src="~/images/untitled.png" border="0"/>
+                                                    </a>
+                                                    <br>
+                                                    <br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</td>
+
+

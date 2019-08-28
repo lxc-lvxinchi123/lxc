@@ -1,0 +1,22 @@
+c:\users\吕鑫驰\documents\visual studio 2015\Projects\CMRC\Model\bin\Debug\Model.dll.config
+c:\users\吕鑫驰\documents\visual studio 2015\Projects\CMRC\Model\bin\Debug\Model.dll
+c:\users\吕鑫驰\documents\visual studio 2015\Projects\CMRC\Model\bin\Debug\Model.pdb
+c:\users\吕鑫驰\documents\visual studio 2015\Projects\CMRC\Model\bin\Debug\EntityFramework.dll
+c:\users\吕鑫驰\documents\visual studio 2015\Projects\CMRC\Model\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\吕鑫驰\documents\visual studio 2015\Projects\CMRC\Model\bin\Debug\EntityFramework.xml
+c:\users\吕鑫驰\documents\visual studio 2015\Projects\CMRC\Model\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\吕鑫驰\documents\visual studio 2015\Projects\CMRC\Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+c:\users\吕鑫驰\documents\visual studio 2015\Projects\CMRC\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+c:\users\吕鑫驰\documents\visual studio 2015\Projects\CMRC\Model\obj\Debug\Model.dll
+c:\users\吕鑫驰\documents\visual studio 2015\Projects\CMRC\Model\obj\Debug\Model.pdb
+C:\Users\吕鑫驰\Desktop\CMRC\Model\bin\Debug\Model.dll.config
+C:\Users\吕鑫驰\Desktop\CMRC\Model\bin\Debug\Model.dll
+C:\Users\吕鑫驰\Desktop\CMRC\Model\bin\Debug\Model.pdb
+C:\Users\吕鑫驰\Desktop\CMRC\Model\bin\Debug\EntityFramework.dll
+C:\Users\吕鑫驰\Desktop\CMRC\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\吕鑫驰\Desktop\CMRC\Model\bin\Debug\EntityFramework.xml
+C:\Users\吕鑫驰\Desktop\CMRC\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\吕鑫驰\Desktop\CMRC\Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\吕鑫驰\Desktop\CMRC\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\吕鑫驰\Desktop\CMRC\Model\obj\Debug\Model.dll
+C:\Users\吕鑫驰\Desktop\CMRC\Model\obj\Debug\Model.pdb

@@ -1,0 +1,19 @@
+c:\users\吕鑫驰\documents\visual studio 2015\Projects\CMRC\DAL\bin\Debug\DAL.dll
+c:\users\吕鑫驰\documents\visual studio 2015\Projects\CMRC\DAL\bin\Debug\DAL.pdb
+c:\users\吕鑫驰\documents\visual studio 2015\Projects\CMRC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+c:\users\吕鑫驰\documents\visual studio 2015\Projects\CMRC\DAL\obj\Debug\DAL.dll
+c:\users\吕鑫驰\documents\visual studio 2015\Projects\CMRC\DAL\obj\Debug\DAL.pdb
+C:\Users\吕鑫驰\Desktop\CMRC\DAL\bin\Debug\DAL.dll
+C:\Users\吕鑫驰\Desktop\CMRC\DAL\bin\Debug\DAL.pdb
+C:\Users\吕鑫驰\Desktop\CMRC\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\吕鑫驰\Desktop\CMRC\DAL\obj\Debug\DAL.dll
+C:\Users\吕鑫驰\Desktop\CMRC\DAL\obj\Debug\DAL.pdb
+C:\Users\吕鑫驰\Desktop\CMRC\DAL\bin\Debug\EntityFramework.dll
+C:\Users\吕鑫驰\Desktop\CMRC\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\吕鑫驰\Desktop\CMRC\DAL\bin\Debug\IDAL.dll
+C:\Users\吕鑫驰\Desktop\CMRC\DAL\bin\Debug\Model.dll
+C:\Users\吕鑫驰\Desktop\CMRC\DAL\bin\Debug\EntityFramework.xml
+C:\Users\吕鑫驰\Desktop\CMRC\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\吕鑫驰\Desktop\CMRC\DAL\bin\Debug\IDAL.pdb
+C:\Users\吕鑫驰\Desktop\CMRC\DAL\bin\Debug\Model.pdb
+C:\Users\吕鑫驰\Desktop\CMRC\DAL\bin\Debug\zh-Hans\EntityFramework.resources.dll

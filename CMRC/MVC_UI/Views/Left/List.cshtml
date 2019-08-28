@@ -1,0 +1,8 @@
+﻿<ul id="Menu1_MyList" cellspacing="0" cellpadding="3" style="width:145px;border-collapse:collapse;">
+    
+    @foreach (var item in Model as IEnumerable<Model.CMRC_Categories>)
+    {
+        <li><a class="MenuUnselected" id="@item.CategoryID" href="@Url.Action("Left","Products",new {id=item.CategoryID })">@item.CategoryName</a></li>
+    }
+    
+    </ul>
